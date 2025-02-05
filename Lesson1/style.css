@@ -1,0 +1,25 @@
+/* 
+    Comment / Uncomment
+    Ctrl + /
+    The code is there but it's not going to be read by the browser
+*/
+
+/* body {
+    background-color: yellow !important;
+}
+
+body {
+    background-color: aqua;
+}
+
+body {
+    background-color: red !important;
+} */
+
+h1 {
+    color: red;
+}
+
+h2, h3, h4 {
+    color: purple;
+}
