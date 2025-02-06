@@ -16,10 +16,38 @@ body {
     background-color: red !important;
 } */
 
+/* Wild card selector - applies style to every element without bg color*/
+* {
+    background-color: lightyellow;
+}
+
 h1 {
     color: red;
 }
 
 h2, h3, h4 {
     color: purple;
+}
+
+h5 {
+    color: orange;
+}
+
+#my-id {
+    color: brown;
+}
+
+.my-class {
+    background-color: yellow;
+}
+
+.my-img {
+    width: 70%;
+    height: 70%;
+    /* width: 300px;
+    height: 300px; */
+}
+
+.my-div {
+    text-align: center;
 }
