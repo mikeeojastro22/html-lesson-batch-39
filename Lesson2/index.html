@@ -6,12 +6,48 @@
     <body>
         <form method="get">
             <label for="firstname">First name:</label>
-            <input type="text" name="firstname" /> <br />
+            <input type="text" name="firstname" required placeholder="Enter your first name" /> <br />
+
             <label for="lastname">Last name:</label>
-            <input type="text" name="lastname" /> <br />
+            <input type="text" name="lastname" required /> <br />
+
             <label for="condition">Do you agree with the conditions?</label>
-            <input type="radio" name="condition" value="yes"> Yes
+            <input type="radio" name="condition" value="yes" checked> Yes
             <input type="radio" name="condition" value="no"> No <br />
+
+            <label for="password">PIN Number:</label>
+            <input type="password" name="password" size="5" /> <br />
+
+            <label for="address">Address:</label>
+            <textarea name="address" maxlength="50" rows="8" cols="30"></textarea> <br />
+
+            <label>Drink:</label>
+            <input type="checkbox" name="drink" value="Coffee"> Coffee
+            <input type="checkbox" name="drink" value="Tea"> Tea
+            <input type="checkbox" name="drink" value="Chocolate"> Chocolate
+            <input type="checkbox" name="drink" value="Strawberry"> Strawberry
+            <input type="checkbox" name="drink" value="Mango"> Mango <br />
+
+            <label for="dessert">Dessert:</label>
+            <select name="dessert">
+                <option selected disabled>Select option</option>
+                <option value="icecream">Ice cream</option>
+                <option value="pudding">Pudding</option>
+                <option value="chocolate">Chocolate</option>
+                <option value="cake">Cake</option>
+                <option value="lecheflan">Leche Flan</option>
+                <option value="halohalo">Halo-halo</option>
+            </select> <br />
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" /> <br />
+
+            <label for="birthday">Birthday:</label>
+            <input type="date" name="birthday" min="2025-02-04" max="2025-02-10" /> <br />
+
+            <label for="age">Age:</label>
+            <input type="number" name="age" min="18" max="100" /> <br />
+
             <input type="submit" value="Submit my information" />
         </form>
     </body>
