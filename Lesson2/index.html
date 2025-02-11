@@ -2,34 +2,35 @@
 <html>
     <head>
         <title>Forms</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     </head>
     <body>
-        <form method="get">
+        <form method="get" class="w3-container">
             <label for="firstname">First name:</label>
-            <input type="text" name="firstname" required placeholder="Enter your first name" /> <br />
+            <input type="text" class="w3-input custom" name="firstname" required placeholder="Enter your first name" /> <br />
 
             <label for="lastname">Last name:</label>
-            <input type="text" name="lastname" required /> <br />
+            <input type="text" class="w3-input" name="lastname" required /> <br />
 
             <label for="condition">Do you agree with the conditions?</label>
-            <input type="radio" name="condition" value="yes" checked> Yes
-            <input type="radio" name="condition" value="no"> No <br />
+            <input type="radio" class="w3-radio" name="condition" value="yes" checked> Yes
+            <input type="radio" class="w3-radio" name="condition" value="no"> No <br />
 
             <label for="password">PIN Number:</label>
-            <input type="password" name="password" size="5" /> <br />
+            <input type="password" class="w3-input" name="password" size="5" /> <br />
 
             <label for="address">Address:</label>
-            <textarea name="address" maxlength="50" rows="8" cols="30"></textarea> <br />
+            <textarea name="address" class="w3-input" maxlength="50" rows="8" cols="30"></textarea> <br />
 
             <label>Drink:</label>
-            <input type="checkbox" name="drink" value="Coffee"> Coffee
-            <input type="checkbox" name="drink" value="Tea"> Tea
-            <input type="checkbox" name="drink" value="Chocolate"> Chocolate
-            <input type="checkbox" name="drink" value="Strawberry"> Strawberry
-            <input type="checkbox" name="drink" value="Mango"> Mango <br />
+            <input type="checkbox" class="w3-check" name="drink" value="Coffee"> Coffee
+            <input type="checkbox" class="w3-check" name="drink" value="Tea"> Tea
+            <input type="checkbox" class="w3-check" name="drink" value="Chocolate"> Chocolate
+            <input type="checkbox" class="w3-check" name="drink" value="Strawberry"> Strawberry
+            <input type="checkbox" class="w3-check" name="drink" value="Mango"> Mango <br />
 
             <label for="dessert">Dessert:</label>
-            <select name="dessert">
+            <select name="dessert" class="w3-select">
                 <option selected disabled>Select option</option>
                 <option value="icecream">Ice cream</option>
                 <option value="pudding">Pudding</option>
@@ -40,15 +41,15 @@
             </select> <br />
 
             <label for="email">Email:</label>
-            <input type="email" name="email" /> <br />
+            <input type="email" class="w3-input" name="email" /> <br />
 
             <label for="birthday">Birthday:</label>
-            <input type="date" name="birthday" min="2025-02-04" max="2025-02-10" /> <br />
+            <input type="date" class="w3-input" name="birthday" min="2025-02-04" max="2025-02-10" /> <br />
 
             <label for="age">Age:</label>
-            <input type="number" name="age" min="18" max="100" /> <br />
+            <input type="number" class="w3-input" name="age" min="18" max="100" /> <br />
 
-            <input type="submit" value="Submit my information" />
+            <input type="submit" class="w3-button w3-black w3-round-small" value="Submit my information" />
         </form>
     </body>
 </html>
