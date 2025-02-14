@@ -9,17 +9,95 @@
 
 .container {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: row;
+    /* flex-wrap: wrap-reverse; */
+    justify-content: space-between;
 }
 
 .first {
     background-color: orange;
+    /* width: 50%; */
 }
 
 .second {
     background-color: green;
+    /* width: 50%; */
 }
 
 .third {
     background-color: blue;
+    /* width: 50%; */
+}
+
+.black-box {
+    background-color: black;
+    width: 50px;
+    height: 50px;
+}
+
+.purple-box {
+    background-color: purple;
+    width: 100px;
+    height: 100px;
+}
+
+.brown-box {
+    background-color: brown;
+    width: 150px;
+    height: 150px;
+}
+
+.box-container {
+    display: flex;
+    align-items: center;
+}
+
+.order-container {
+    display: flex;
+}
+
+.apple{
+    background-color: rgb(246, 0, 8);
+    order: -5;
+}
+
+.banana{
+    background-color: rgb(246, 246, 0);
+    order: 5;
+}
+
+.mango{
+    background-color: rgb(71, 252, 0);
+    order: 2;
+}
+
+.watermelon{
+    background-color: rgb(10, 70, 4);
+    order: -7;
+}
+
+.grapes{
+    background-color: rgb(143, 3, 165);
+    order: 1;
+}
+
+.grow-container {
+    display: flex;
+}
+
+.grow1, .grow2, .grow3 {
+    background-color: pink;
+    margin: 5px;
+}
+
+.grow1 {
+    flex-grow: 1;
+}
+
+.grow2 {
+    flex-grow: 2;
+}
+
+.grow3 {
+    flex-grow: 2;
 }
