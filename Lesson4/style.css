@@ -1,0 +1,61 @@
+.container {
+    display: grid;
+    grid-template-columns: 40px 50px auto 50px 40px;
+    grid-template-rows: 25% 100px auto;
+    /* grid-template-areas: "header header header header header"; */
+    /* row-gap: 10px;
+    column-gap: 15px; */
+    gap: 10px 15px;
+    /* justify-items: center;
+    align-items: center; */
+    place-items: center;
+}
+
+.second-container {
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    /* justify-content: space-between;
+    align-items: end; */
+    place-content: center;
+}
+
+.section-container {
+    display: grid;
+    grid-template-columns: 60px 60px 60px 60px 60px;
+    grid-template-rows: 30px 30px;
+    grid-auto-flow: row;
+}
+
+.item-a {
+    grid-column: 1;
+    grid-row: 1/3;
+    background-color: pink;
+    /* place-self: center; */
+}
+
+.item-e {
+    background-color: blue;
+    grid-column: 3;
+    grid-row: 2/3;
+}
+
+.chessboard {
+    display: grid;
+    grid-template-columns: 50px 50px;
+    grid-template-rows: repeat(2, 50px);
+    /* grid-template-rows: 50px 50px; */
+}
+
+.gray {
+    background-color: gray;
+}
+
+.black {
+    background-color: black;
+    color: white;
+}
+
+.gray, .black {
+    display: grid;
+    place-items: center;
+}
