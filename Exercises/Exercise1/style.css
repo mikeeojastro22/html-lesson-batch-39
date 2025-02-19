@@ -3,3 +3,37 @@
     Mobile: 425px and down
     Tablet: Between 426px and 768px
 */
+
+.mobile, .tablet, .desktop {
+    display: none;
+}
+
+@media only screen and (min-width: 769px){
+    .desktop {
+        display: block;
+    }
+
+    body {
+        background-color: red;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .mobile {
+        display: block;
+    }
+
+    body {
+        background-color: blue;
+    }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px){
+    .tablet {
+        display: block;
+    }
+
+    body {
+        background-color: yellow;
+    }
+}
